@@ -1,0 +1,24 @@
+﻿
+@section scripts {
+    <script type="text/javascript" src="~/Scripts/app.js"></script>
+}
+
+<div class="jumbotron">
+    <div id="addTime" class="form-group">
+        <label for="description">Task</label>
+        <input type="text" id="description" placeholder="What have you done?" style="width: 250px;" class="form-control-static" />
+        <label for="project">Project</label>
+        <select id="project" class="form-control-static"></select>
+        <label for="user">User</label>
+        <select id="user" class="form-control-static"></select>
+        <label for="date">Date</label>
+        <input type="text" id="datepicker" style="width: 80px;" class="form-control-static" />
+        <label for="date">During</label>
+        <input type="text" id="start" style="width: 50px;" class="form-control-static" /> - <input type="text" id="stop" style="width: 50px;" class="form-control-static" />
+        <input type="button" class="btn btn-primary" onclick="save();" value="Save">
+        <input type="button" class="btn btn-info" onclick="reset();" value="Clear">
+    </div>
+</div>
+<div id="result">
+    <h1 id="title">Time Record</h1>
+</div>
